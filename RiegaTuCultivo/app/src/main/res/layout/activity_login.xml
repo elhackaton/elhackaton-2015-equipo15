@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <!--Cabecera-->
+    <TextView
+        android:paddingLeft="15dp"
+        style="@style/Header"
+        android:text="@string/title_login"
+        android:id="@+id/dataHeader"/>
+
+    <View android:id="@+id/separator" android:layout_below="@+id/dataHeader" style="@style/Separator_horizontal" />
+
+    <!--Elementos del formulario-->
+    <RelativeLayout
+        android:id="@+id/rellay"
+        android:layout_below="@id/separator"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--Nombre de usuario-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/usuario_login_text"
+                    android:hint="@string/hint_username"
+                    android:drawableLeft="@drawable/ic_action_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Contraseña -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pass_login_text"
+                    android:hint="@string/hint_password"
+                    android:drawableLeft="@drawable/ic_action_secure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usuario_login_text"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPassword"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Recordar usuario -->
+            <CheckBox
+                android:id="@+id/guardarUsuarioPass_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pass_login_text"
+                android:layout_alignStart="@+id/pass_login_text"
+                android:layout_below="@+id/pass_login_text"
+                android:layout_marginTop="8dp"
+                android:checked="false"
+                android:text="@string/text_recordar_clave" />
+
+            <!--Recuperar contraseña-->
+            <TextView
+                android:id="@+id/login_recuperar_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_recuperar_clave"
+                android:padding="12dp"
+                android:background="?android:selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!--Botón para login-->
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/text_login"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/olvidar_text_login" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--Parte de abajo botones Probar y Registrar-->
+    <LinearLayout
+        android:gravity="bottom"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <!--Botón registrar-->
+        <TextView
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/primary_color"
+            android:textSize="21sp"
+            android:layout_weight="2"
+            android:id="@+id/registrar_log_tv"
+            android:text="@string/text_registrar"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:longClickable="false"
+            android:clickable="true" />
+
+    </LinearLayout>
+</RelativeLayout>

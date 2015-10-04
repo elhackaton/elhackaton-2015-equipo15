@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_home"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/item_navigation_drawer_home" />
+        <item
+            android:id="@+id/item_navigation_drawer_mapa"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/item_navigation_drawer_mapa" />
+    </group>
+
+    <group
+        android:id="@+id/menu_down"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/item_navigation_drawer_help"
+            android:icon="@drawable/ic_action_action_help"
+            android:title="@string/item_navigation_drawer_info" />
+        <item
+            android:id="@+id/item_navigation_drawer_log_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/item_navigation_drawer_log_out" />
+
+    </group>
+
+    <!--
+            <item
+                android:id="@+id/item_navigation_drawer_perfil"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/item_navigation_drawer_perfil" />
+            <item
+                android:id="@+id/item_navigation_drawer_pagos"
+                android:icon="@drawable/ic_money"
+                android:title="@string/item_navigation_drawer_pagos_valoracion" />
+            <item
+                android:id="@+id/item_navigation_drawer_pendientes_terminados"
+                android:icon="@drawable/ic_timer_black_24dp"
+                android:title="@string/item_navigation_drawer_trabajos" />
+
+
+        </group>
+
+        <group
+            android:id="@+id/menu_down"
+            android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/item_navigation_drawer_help"
+                android:icon="@drawable/ic_action_action_help"
+                android:title="@string/item_navigation_drawer_help" />
+            <item
+                android:id="@+id/item_navigation_drawer_log_out"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/item_navigation_drawer_log_out" />
+
+        </group>
+    -->
+
+
+<!--
+    <item android:title="Subheader">
+        <menu>
+            <item
+                android:id="@+id/item_navigation_drawer_settings"
+                android:icon="@drawable/ic_action_content_mail"
+                android:title="Settings" />
+            <item
+                android:id="@+id/item_navigation_drawer_help_and_feedback"
+                android:icon="@drawable/ic_action_action_delete"
+                android:title="Help and feedback" />
+        </menu>
+    </item>
+-->
+
+</menu>

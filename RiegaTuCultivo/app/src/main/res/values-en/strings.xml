@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="info_actualizar">Desliza hacia abajo para actualizar</string>
+    <string name="item_navigation_drawer_home">Inicio</string>
+    <string name="tab_recomendacion">Info</string>
+    <string name="tab_mis_sectores">Mis sectores</string>
+    <string name="hint_nombre_sector">* nombre del sector</string>
+    <string name="hint_tipo_cultivo">* tipo de cultivo</string>
+    <string name="text_tipo_agua">tipo de agua</string>
+    <string name="hint_localizacion">* localizacion</string>
+    <string name="title_login">Entra</string>
+    <string name="text_recordar_clave">Recuperar mi contraseña</string>
+    <string name="text_recuperar_clave">No recuerdo mi contraseña</string>
+    <string name="text_login">Entrar</string>
+    <string name="text_registrar">Registrar</string>
+    <string name="error_nombre_usuario">Debe de tener al menos de 5 caracteres</string>
+    <string name="error_pass_long">Debe de tener almenos 6 caracteres formados por letras y números</string>
+    <string name="info_servicios_seleccionados">\" servicio/s seleccionados\"</string>
+    <string name="item_navigation_drawer_mapa">Mapa de sensores</string>
+    <string name="item_navigation_drawer_info">informacion</string>
+    <string name="item_navigation_drawer_log_out">salir</string>
+    <string name="action_done">Guardar</string>
+    <string name="error_seleccionar_localizacion">No has seleccionado una localización</string>
+</resources>

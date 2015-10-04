@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbarFormServicio"
+        android:layout_width="match_parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="?attr/actionBarSize"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/nombre_sector_form"
+                style="@style/EditText"
+                android:hint="@string/hint_nombre_sector"
+                />
+
+            <TextView
+                style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/hint_tipo_cultivo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--Categoria-->
+            <Spinner
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sector_form_tipo_cultivo_sp" />
+            <TextView
+                style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_tipo_agua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--Categoria-->
+            <Spinner
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sector_form_tipo_agua_sp" />
+
+
+            <RelativeLayout
+                android:layout_marginRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_my_localizacion"
+                    android:id="@+id/icono_localizacion_servicio_form"
+                    android:layout_marginLeft="5dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+
+                <EditText
+                    android:layout_toLeftOf="@id/icono_localizacion_servicio_form"
+                    android:id="@+id/localizacion_servicio_form_et"
+                    android:layout_width="match_parent"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:hint="@string/hint_localizacion" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
